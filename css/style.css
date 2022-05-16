@@ -136,6 +136,8 @@ header{
     grid-area: section1;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.90) ,rgba(0,0,0,0.55)), url('../images/Background1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -171,9 +173,11 @@ header{
 .empty .greet{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     padding: 30px;
     border: solid white 5px;
-    width: 200px;
+    width: 240px;
 
 
 }
@@ -185,14 +189,86 @@ header{
     letter-spacing: 3px;
 }
 
+.empty .greet p{
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-family: 15pt;
+    color: yellowgreen;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.empty .greet .barline{
+    margin: auto 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barline div{
+    width: 100px;
+    height: 4px;
+    background-color: yellowgreen;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 .section2{
     grid-area: section2;
     height: 90vh;
     background-color: white;
 }
 
-footer{
-    grid-area: footer;
-    height: 30vh;
-    background-color: black
+.title_section2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.title_section2 h1{
+    font-size: 15pt;
+    color: yellowgreen; 
+}
+.barline1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 4px;
+    background-color: yellowgreen;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.barline2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 4px;
+    background-color: yellowgreen;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images div img{
+    width: 300px;
+    margin: 2px 0;
+    border-radius: 10px;
+    height: 40vh;
+}
+
+.images div img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
