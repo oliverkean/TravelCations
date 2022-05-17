@@ -29,9 +29,11 @@ body{
     grid-template-areas: 
     "header"
     "section1"
-    "empty"
+    "strawberry-section"
     "section2"
-    "footer"
+    "footer";
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 header{
@@ -44,6 +46,7 @@ header{
     position: fixed;
     width: 100%;
     height: 10vh;
+    scroll-snap-align: start;
 }
 
 .logo{
@@ -139,7 +142,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,106 +160,130 @@ header{
     font-family: 'Montserrat' , sans-serif;
 }
 
-.empty{
-    grid-area: empty;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(93, 39, 75, 0.57), rgba(241,197,153, 0.57)) ,url('../images/strawberry.jpeg');
+.strawberry_section{
+    grid-area: strawberry-section;
+    background-image: linear-gradient(to bottom, rgba(93, 39, 75, 0.57), rgba(241,197,153,0.57)),url('../images/strawberry.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.empty .greet{
+
+.strawberry_section .greet{
+    border: white 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    padding: 30px;
+
+}
+
+.strawberry_section .greet h1{
+    display: flex;
+    flex-direction: column;
+   font-size: 25pt;
+   font-weight: bolder;
+   margin: 0;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.strawberry_section .greet p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: yellowgreen;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.strawberry_section .greet .barline{
+    width: 100px;
+    height: 3px;
+    background-color: yellowgreen;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strawberry_section .greet .barline1{
+    width: 150px;
+    height: 3px;
+    background-color: yellowgreen;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+.icons .icon-container{
+    margin: 50px auto;
+}
+
+.icons .icon-container .disp-icon{
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 30px;
-    border: solid white 5px;
-    width: 240px;
-
-
+    align-items: center;
 }
-.empty .greet h1{
-    font-family: 'Roboto', serif;
-    font-size: 25pt;
+
+.icons .icon-container .disp-icon .icon-border{
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2_icon{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12pt;
+}
+
+.p_icon{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 9pt;
     font-weight: bolder;
-    margin: 0;
-    letter-spacing: 3px;
 }
-
-.empty .greet p{
-    font-family: 'Montserrat', serif;
-    font-weight: 500;
-    font-family: 15pt;
-    color: yellowgreen;
-    margin: 0;
-    letter-spacing: 3px;
-}
-
-.empty .greet .barline{
-    margin: auto 0;
-    display: block;
-    display: flex;
-    justify-content: center;
+.icons .icon-container .disp-icon .icon-border img{
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+    margin: 10px;
     align-items: center;
 }
 
-.barline div{
-    width: 100px;
-    height: 4px;
-    background-color: yellowgreen;
-    margin: 6px 0;
-    transition: 0.4s;
+.scroll_reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 
-.section2{
-    grid-area: section2;
-    height: 100vh;
-    background-color: white;
-}
-
-.title_section2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 80px auto;
-}
-
-.title_section2 h1{
-    font-size: 15pt;
-    color: yellowgreen; 
-}
-.barline1 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 4px;
-    background-color: yellowgreen;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.barline2 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 4px;
-    background-color: yellowgreen;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-footer{
-    grid-area: footer;
-    background-color: black;
-    width: 100%;
-    height: 20vh;
+.scroll_reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
