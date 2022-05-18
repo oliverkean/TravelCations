@@ -32,8 +32,6 @@ body{
     "strawberry-section"
     "section2"
     "footer";
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
 }
 
 header{
@@ -47,7 +45,6 @@ header{
     top: 0;
     width: 100%;
     height: 10vh;
-    scroll-snap-align: start;
     z-index: 100000;
 }
 
@@ -57,6 +54,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: auto 15px;
 }
 
 .logo a{
@@ -116,14 +114,11 @@ header{
     background-color: black; 
 }
 
-
-
 .mobile_menu a{
-    text-decoration: none;
     color: #006946;
-    font-family: 'Montserrat' , sans-serif;
-    font-weight: light;
-    font-size: 15pt;
+    text-decoration: none;
+    font-family: 'Montserrat' , sans-serif;        font-weight: 600;
+    font-size: 12pt;
 }
 
 .mobile_menu a:hover{
@@ -160,9 +155,13 @@ header{
 }
 
 .section1 p{
-    font-size: 12pt;
+    font-size: 8pt;
     font-weight: bolder;
     font-family: 'Montserrat' , sans-serif;
+}
+
+.baguio{
+    color: #006946;
 }
 
 .strawberry_section{
@@ -172,7 +171,7 @@ header{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200vh;
+    height: 260vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -188,7 +187,7 @@ header{
     flex-direction: column;
     width: 240px;
     padding: 30px;
-
+    margin: 25px auto;
 }
 
 .strawberry_section .greet h1{
@@ -200,6 +199,7 @@ header{
    letter-spacing: 2px;
    text-transform: uppercase;
 }
+
 
 .strawberry_section .greet p{
     font-family: 'Montserrat', sans-serif;
@@ -234,8 +234,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto;
-    overflow: hidden;
+    margin: 120px auto;
 }
 .icons .icon-container{
     margin: 50px auto;
@@ -296,7 +295,7 @@ header{
 
 .section2{
     grid-area: section2;
-    height: 220vh;
+    height: 310vh;
     background-color:#ece9d9;
     width: 100%;
     display: flex;
@@ -308,7 +307,7 @@ header{
 .section_title2{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px auto;
     color: #006946;
 }
 .barline3{
@@ -370,14 +369,19 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     padding: 20px;
 }
 
+.card-text p{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 12pt;
+    font-weight: lighter;
+}
+
 .card-images:hover{
-    cursor: pointer;
     transform: scale(1.1);
-    transition: 0.3s;
+    transition: 0.2s;
     color:#ece9d9;
     background-color: #006946;
 }
@@ -386,4 +390,253 @@ footer{
     grid-area: footer;
     height: 20vh;
     background-color: black;
+}
+
+@media screen and (min-width:620px){
+
+    .logo{
+        margin: auto 20px;
+    }
+    
+    .logo a{
+        font-size: 10pt;
+    }
+
+    .menu_icon{
+        margin: auto 10px;
+    }
+    
+    .section1 h1{
+        font-size: 25pt;
+    }
+    
+    .section1 p{
+        font-size: 13pt;
+    }
+
+    .strawberry_section{
+        height: 230vh;
+    }
+
+    .strawberry_section .greet{
+        width: 320px;
+        padding: 40px;
+        margin: 50px auto;
+    }
+
+    .strawberry_section .greet h1{
+       font-size: 35pt;
+    }
+    
+    .strawberry_section .greet .barline{
+        width: 120px;
+    }
+    
+    .strawberry_section .greet .barline1{
+        width: 200px;
+    }
+
+    .icons{
+        margin: 60px auto;
+    }
+    .icons .icon-container{
+        margin: 40px auto;
+    }
+    
+    .icons .icon-container .disp-icon .icon-border{
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2_icon{
+        font-size: 15pt;
+    }
+    
+    .p_icon{
+        font-size: 11pt;
+    }
+    
+    .section2{
+        height: 250vh;
+    }
+    
+    
+    .card-images{
+        background-color: #ece9d9;
+        width: 370px;
+        height: 420px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 15px;
+        margin: 20px;
+        color: #006946 ;
+    }
+    
+    .image{
+        height: 150px;
+        margin-bottom: 15px;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .logo{
+        margin: auto 10px;
+    }
+    
+    .logo a{
+        font-size: 12pt;
+    }
+
+    .menu_icon{
+        display: none;
+    }
+
+    nav{
+        display: block;
+
+    }
+    nav ul{
+        margin: 35px 20px;
+    }
+
+    nav ul li{
+        display: inline;
+        margin: auto 10px;
+    }
+    nav ul li a{
+        color: #006946;
+        text-decoration: none;
+        color: #006946;
+        font-family: 'Montserrat' , sans-serif;
+        font-weight: 600;
+        font-size: 12pt;
+    }
+    
+    nav ul li a:hover{
+        color: white;
+
+    }
+    
+    header{
+        height: 13vh;
+    }
+
+    .section1 h1{
+        font-size: 60pt;
+    }
+    
+    .section1 p{
+        font-size: 15pt;
+        font-weight: bolder;
+        font-family: 'Montserrat' , sans-serif;
+    }
+    
+    .strawberry_section{
+        height: 140vh;
+    }
+    
+    .strawberry_section .greet{
+        border: white 3px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 800px;
+        padding: 100px;
+    }
+    
+
+
+    .strawberry_section .greet h1{
+        display: block;
+        font-size: 50pt;
+    }
+
+    .strawberry_section .greet h1 br{
+        content: ' ';
+    }
+
+
+    .strawberry_section .greet p{
+       font-size: 20pt;
+    }
+
+    
+    .strawberry_section .greet .barline{
+        width: 300px;
+    }
+    
+    .strawberry_section .greet .barline1{
+        width: 500px;
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .icons .icon-container{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    
+
+    .icons .icon-container .disp-icon .icon-border{
+        width: 85px;
+        height: 85px;
+    }
+    
+    .h2_icon{
+        margin: 10px;
+        text-align: center;
+        font-size: 15pt;
+    }
+    
+    .p_icon{
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .section2{
+        height: 110vh;
+    }
+    
+    .section_title2 h2{
+        font-size: 25pt;
+        text-align: center;
+    }
+    .barline3{
+        width: 500px;
+    }
+    
+    .images-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-images{
+        width: 310px;
+        height: 410px;
+        margin: 30px;
+    }
+    
+    .image{
+        height: 190px;
+    }
+
+    
+    footer{
+        grid-area: footer;
+        height: 40vh;
+        background-color: black;
+    }
+    
+    
 }
