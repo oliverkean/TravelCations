@@ -65,6 +65,7 @@ header{
 
 .logo a:hover{
     color: white;
+    transition: all 0.2s ease;
 }
 
 .menu_icon{
@@ -78,7 +79,7 @@ header{
     height: 2.2px;
     background-color: #006946;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: all 0.4s ease;
 }
 .mobile_menu{
     display: none;
@@ -356,9 +357,6 @@ header{
     margin-bottom: 15px;
     border-radius: 15px 15px 0 0;
 }
-.picture{
-    width: 310px;
-}
 
 .spot1{
     background-image: url('../images/wallpaper1.png');
@@ -393,6 +391,12 @@ header{
     font-weight: lighter;
 }
 
+.card-images:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    color:#ece9d9;
+    background-color: #006946;
+}
 
 footer{
     grid-area: footer;
@@ -524,9 +528,10 @@ footer{
         font-size: 12pt;
     }
     
-    nav ul li a:hover{
+    nav ul li:hover{
         color: white;
-
+        transform: scale(1.1);
+        transition: all ease 0.3s;
     }
     
     header{
@@ -639,14 +644,14 @@ footer{
         height: 190px;
     }
 
-    .card-images:hover{
-        transform: scale(1.1);
-        transition: 0.2s;
-        color:#ece9d9;
-        background-color: #006946;
+    nav ul li a:hover{
+        color: white;
     }
     
-    
+    nav ul li:hover{
+        transform: scale(2.1);
+        transition: 0.3s all ease;
+    }
     footer{
         grid-area: footer;
         height: 40vh;
