@@ -171,7 +171,7 @@ header{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 260vh;
+    height: 220vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -295,7 +295,7 @@ header{
 
 .section2{
     grid-area: section2;
-    height: 310vh;
+    height: 260vh;
     background-color:#ece9d9;
     width: 100%;
     display: flex;
@@ -379,12 +379,6 @@ header{
     font-weight: lighter;
 }
 
-.card-images:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-    color:#ece9d9;
-    background-color: #006946;
-}
 
 footer{
     grid-area: footer;
@@ -631,6 +625,13 @@ footer{
         height: 190px;
     }
 
+    .card-images:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+        color:#ece9d9;
+        background-color: #006946;
+    }
+    
     
     footer{
         grid-area: footer;
