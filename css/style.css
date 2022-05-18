@@ -299,7 +299,7 @@ header{
 
 .section2{
     grid-area: section2;
-    height: 260vh;
+    height: 230vh;
     background-color:#ece9d9;
     width: 100%;
     display: flex;
@@ -317,7 +317,7 @@ header{
 
 .section_title2 h2{
     position: relative;
-    bottom: 90px;
+    bottom: 50px;
     text-align: center;
 }
 .barline3{
@@ -329,7 +329,7 @@ header{
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 90px;
+    bottom: 45px;
 }
 
 .images-container{
@@ -338,7 +338,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 80px;
+    bottom: 20px;
 }
 
 .card-images{
