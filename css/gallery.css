@@ -174,10 +174,15 @@ header{
 .section1 div h2 span{
     color:#006946;
 }
-.slider-section{
+.section2{
     grid-area: slider;
+    display: flex;
+    justify-content: center;
+
+}
+.slider-section{
     position: relative;
-    margin: 30px;
+    width: 445px;
 }
 .slider {
 	overflow: hidden;
@@ -187,13 +192,14 @@ header{
 	width: 500%;
 	margin: 0;
 	left: 0;
-	animation: 20s slider infinite;
+	animation: 15s slider infinite ease;
 }
 .slider figure img {
 	width: 20%;
-    height: 50vh;
+    height: 40vh;
 	float: left;
 }
+
 
 @keyframes slider {
 	0% {
@@ -202,7 +208,7 @@ header{
 	20% {
 		left: 0;
 	}
-	25% {
+	20% {
 		left: -100%;
 	}
 	45% {
@@ -225,6 +231,40 @@ header{
 	}
 
 
+}
+
+.image-section{
+    grid-area: section-gallery;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px 0 20px;
+}
+
+.image-section .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-section .box .set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-section .box .set img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    border-radius: 9px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
 }
 
 
@@ -262,6 +302,27 @@ footer{
         left: 0;
         height: 80vh;
         min-height: 70px;
+    }
+
+    .barline{
+        width: 320px;
+        height: 3px;
+    }
+    
+    .section1 div h2{
+        font-size: 20pt;
+    }
+
+    .slider-section{
+        grid-area: slider;
+        position: relative;
+        margin: 30px;
+        width: 500px;
+    }
+
+    .slider figure img {
+        width: 20%;
+        height: 40vh;
     }
 }
 
@@ -314,4 +375,40 @@ footer{
         transform: scale(2.1);
         transition: 0.3s all ease;
     }
+
+    .image-section .box{
+        flex-direction: row;
+    }
+    
+    .image-section .box .set{
+        width: 32.5%;
+    }
+
+    .image-section .box .set img:hover{
+        transform: scale(1.1);
+        transition: all ease 0.3s;
+    }
+
+    .barline{
+        width: 560px;
+        height: 3px;
+    }
+    
+    .section1 div h2{
+        font-size: 40pt;
+        text-align: center;
+    }
+
+    .slider-section{
+        grid-area: slider;
+        position: relative;
+        margin: 30px;
+        width: 700px;
+    }
+    .slider figure img {
+        width: 20%;
+        height: 60vh;
+    }
+
+    
 }
