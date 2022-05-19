@@ -182,7 +182,7 @@ header{
 }
 .slider-section{
     position: relative;
-    width: 445px;
+    width: 350px;
 }
 .slider {
 	overflow: hidden;
@@ -239,7 +239,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px 20px 0 20px;
+    margin: 20px 60px;
 }
 
 .image-section .box{
