@@ -586,12 +586,11 @@ footer{
         margin: auto 10px;
     }
     nav ul li a{
-        color: #006946;
         text-decoration: none;
         color: #006946;
         font-family: 'Montserrat' , sans-serif;
         font-weight: 600;
-        font-size: 12pt;
+        font-size: 10pt;
     }
     
     nav ul li:hover{

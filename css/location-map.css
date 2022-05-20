@@ -256,9 +256,10 @@ header{
 }
 .picture h1{
     color: white;
-    font-size: 30pt;
+    font-size: 20pt;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 /*design for tablets*/
@@ -306,7 +307,7 @@ header{
 
     .picture h1{
         color: white;
-        font-size: 50pt;
+        font-size: 40pt;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 3px;
     }
@@ -341,12 +342,11 @@ header{
         margin: auto 10px;
     }
     nav ul li a{
-        color: #006946;
         text-decoration: none;
         color: #006946;
         font-family: 'Montserrat' , sans-serif;
         font-weight: 600;
-        font-size: 12pt;
+        font-size: 10pt;
     }
     
     header{
