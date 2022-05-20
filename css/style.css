@@ -406,6 +406,37 @@ header{
     background-color: #006946;
 }
 
+.schedule{
+    background-color: #006946;
+    color: black;
+    padding: 15px;
+    border-radius: 60px;
+    margin: 20px;
+}
+
+.schedule:hover{
+    background-color: white;
+    color: #006946;
+    transform: scale(1.1);
+    transition: 0.3s ease all;
+}
+
+.mobile_menu .schedule_mobile{
+    background-color: #006946;
+    color: black;
+    padding: 15px;
+    border-radius: 60px;
+    position: relative;
+    top: 20px;
+}
+
+.mobile_menu .schedule_mobile:hover{
+    background-color: white;
+    color: #006946;
+    transform: scale(1.1);
+    transition: 0.3s ease all;
+}
+
 footer{
     grid-area: footer;
     height: 500%;
