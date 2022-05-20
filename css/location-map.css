@@ -262,6 +262,29 @@ header{
     text-align: center;
 }
 
+footer{
+    grid-area: footer;
+    height: 500%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column; 
+    top: 45%
+}
+
+footer div p{
+    color:#006946;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
 /*design for tablets*/
 @media screen and (min-width:620px){
     header{
@@ -310,6 +333,10 @@ header{
         font-size: 40pt;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 3px;
+    }
+
+    footer{
+        height: 500%;
     }
 
 }
@@ -385,6 +412,10 @@ header{
         font-size: 60pt;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 3px;
+    }
+
+    footer{
+        height: 500%;
     }
 
 }

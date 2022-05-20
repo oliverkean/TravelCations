@@ -175,6 +175,10 @@ header{
     transition: 0.3s ease all;
 }
 
+.baguio{
+    color: #006946;
+}
+
 .section1{
     grid-area: section1;
     background-image: linear-gradient(to bottom, rgba(227,220,205, 0.89), rgba(50,43,114, 0.55)), url('../images/background2.jpg');
@@ -320,9 +324,26 @@ header{
 }
 footer{
     grid-area: footer;
-    height: 20vh;
-    background-color: black;
+    height: 500%;
     width: 100%;
+    background-color: black;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column; 
+    top: 45%
+}
+
+footer div p{
+    color:#006946;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 /*design for tablets*/
@@ -361,6 +382,10 @@ footer{
 
     .scroll-image h2{
         font-size: 30pt;
+    }
+
+    footer{
+        height: 500%;
     }
 }
 
@@ -426,6 +451,10 @@ footer{
 
     .geography p, .climate {
         font-size: 20pt;
+    }
+
+    footer{
+        height: 500%;
     }
 
 }

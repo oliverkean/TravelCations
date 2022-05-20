@@ -214,7 +214,7 @@ header{
 .strawberry_section .greet p{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: yellowgreen;
+    color:#006946;
     margin: 0;
     letter-spacing: 3px;
     font-weight: bolder;
@@ -223,7 +223,7 @@ header{
 .strawberry_section .greet .barline{
     width: 100px;
     height: 3px;
-    background-color: yellowgreen;
+    background-color:#006946;
     margin: 6px 0;
     transition: 0.4s;
     display: flex;
@@ -234,7 +234,7 @@ header{
 .strawberry_section .greet .barline1{
     width: 150px;
     height: 3px;
-    background-color: yellowgreen;
+    background-color:#006946;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -393,20 +393,24 @@ header{
     padding: 20px;
 }
 
+.card-images a{
+    text-decoration: none;
+    color: #006946;
+}
 .card-text p{
     font-family: 'Roboto' , sans-serif;
     font-size: 12pt;
     font-weight: lighter;
 }
 
-.card-images:hover{
+.card-images:hover, .card-images a:hover{
     transform: scale(1.1);
     transition: all 0.2s ease;
     color:#ece9d9;
     background-color: #006946;
 }
 
-.schedule{
+.other{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -414,14 +418,14 @@ header{
     margin: 20px;
 }
 
-.schedule:hover{
+.other:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
     transition: 0.3s ease all;
 }
 
-.mobile_menu .schedule_mobile{
+.mobile_menu .other_mobile{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -430,7 +434,7 @@ header{
     top: 20px;
 }
 
-.mobile_menu .schedule_mobile:hover{
+.mobile_menu .other_mobile:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
@@ -447,6 +451,19 @@ footer{
     z-index: 1;
 }
 
+footer div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column; 
+    top: 45%
+}
+
+footer div p{
+    color:#006946;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
 
 /*design for tablets*/
 @media screen and (min-width:620px){
@@ -546,7 +563,7 @@ footer{
     }
 
     footer{
-        height: 800%;
+        height: 500%;
     }
 }
 
@@ -721,7 +738,7 @@ footer{
         transition: 0.3s all ease;
     }
     footer{
-        height: 1000%;
+        height: 500%;
     }
     
     
