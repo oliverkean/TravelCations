@@ -252,7 +252,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width:100%;
 }
 
 .image-section .box .set img{
@@ -267,7 +267,7 @@ header{
     -moz-box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
 }
 
-.schedule{
+.other{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -275,14 +275,14 @@ header{
     margin: 20px;
 }
 
-.schedule:hover{
+.other:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
     transition: 0.3s ease all;
 }
 
-.mobile_menu .schedule_mobile{
+.mobile_menu .other_mobile{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -291,7 +291,7 @@ header{
     top: 20px;
 }
 
-.mobile_menu .schedule_mobile:hover{
+.mobile_menu .other_mobile:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
