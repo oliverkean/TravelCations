@@ -195,7 +195,7 @@ header{
 }
 
 .section1 h1, p{
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,7 +223,7 @@ header{
     font-style: normal;
     font-family: 'Arial', sans-serif;
     color: black;
-    text-align: justify;
+    text-align: left;
 }
 
 .section2 article p b{

@@ -40,6 +40,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 
 }
 
@@ -247,21 +248,6 @@ header{
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .link-images{
     grid-area: link;
@@ -532,7 +518,7 @@ footer div p{
     width: 75%;
     height: 90%;
     border-radius: 10px;
-}
+    }
 
     footer{
         height: 500%;

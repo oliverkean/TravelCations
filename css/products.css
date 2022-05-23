@@ -305,6 +305,7 @@ header{
     font-weight: lighter;
     text-align:start;
     margin-top: 20px;
+    color: black;
 }
 
 .card-images:hover, .card-images:hover img{
@@ -314,6 +315,9 @@ header{
     background-color: #006946;
 }
 
+.card-text p:hover{
+    color: white;
+}
 
 
 .link-images{
