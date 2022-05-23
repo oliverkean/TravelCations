@@ -26,10 +26,13 @@ function validation(){
         return false
     }
 
-    if(email.length < 20){
+    if(message.length < 20){
         text = "Please Enter more than 20 characters "
         error_msg.innerHTML = text
         return false
     }
+
+    alert('Sent Succesfully')
+    return false
 
 }
