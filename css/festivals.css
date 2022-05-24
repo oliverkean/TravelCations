@@ -272,11 +272,12 @@ header{
 }
 
 .image img{
-    opacity: 0.8;
+    opacity: 0.9;
     position: relative;
     vertical-align: top;
     transition: 0.6s all ease;
     transition-property: opacity;
+    backdrop-filter: blur(5px);
 }
 
 .image:hover img{
@@ -339,13 +340,12 @@ header{
 
 .link{
     position: absolute;
-    background: #006946;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    bottom: -60px;
+    bottom: 30%;
     transition: 0.9s all ease;
     opacity: 0;
     transition-property: bottom, opacity;
@@ -354,15 +354,15 @@ header{
 .link .more{
     justify-content: center;
     align-items: center;
-    background-color: #006946;
     border-radius: 30px;
     padding: 10px;
     text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 12pt;
+    color:white;
+    font-weight: bolder;
+    font-size: 14pt;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 .link .more:hover{
@@ -374,6 +374,7 @@ header{
     bottom: 0;
     opacity: 1;
 }
+
 footer{
     grid-area: footer;
     height: 500%;
